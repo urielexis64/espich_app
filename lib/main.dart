@@ -1,4 +1,7 @@
+import 'package:espich_app/constants.dart';
+import 'package:espich_app/src/pages/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,12 +10,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Espich App',
-      theme: ThemeData.dark().copyWith(
-        accentColor: Colors.redAccent,
-        textTheme: ThemeData.dark().textTheme.apply(
-              fontFamily: 'Poppins',
-            ),
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: Constants.themeData,
+      home: HomePage(),
     );
   }
 }

@@ -23,8 +23,12 @@ environment:
 dependencies:
     flutter:
         sdk: flutter
+    avatar_glow: ^2.0.1
     cupertino_icons: ^1.0.2
     font_awesome_flutter: ^9.0.0
+    highlight_text: ^0.7.2
+    provider: ^5.0.0
+    speech_to_text: ^3.2.0
 
 dev_dependencies:
     flutter_test:
